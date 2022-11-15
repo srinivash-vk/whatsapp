@@ -18,11 +18,12 @@ class _HomePageState extends State<HomePage>
   @override
   void initState() {
     super.initState();
-    _tabController =  TabController(length: 4, vsync: this, initialIndex: 1)
+    _tabController = TabController(length: 4, vsync: this, initialIndex: 1)
       ..addListener(() {
         setState(() {});
       });
   }
+
 
   @override
   Widget build(BuildContext context) {
@@ -31,48 +32,51 @@ class _HomePageState extends State<HomePage>
         elevation: 0,
         title: const Align(
           alignment: Alignment.centerLeft,
-          child: Text("whats app"),
+          child: Text("Whats app"),
         ),
         actions: [
           const Icon(Icons.search),
           PopupMenuButton(
-            itemBuilder: _tabController?.index==1?(context) => [
-              const PopupMenuItem(
-                child: Text("New group"),
-              ),
-              const PopupMenuItem(
-                child: Text("New broadcast"),
-              ),
-              const PopupMenuItem(
-                child: Text("Linked devices"),
-              ),
-              const PopupMenuItem(
-                child: Text("Starred message"),
-              ),
-              const PopupMenuItem(
-                child: Text("Payments"),
-              ),
-              const PopupMenuItem(
-                child: Text("Settings"),
-              ),
-            ]
-              :_tabController?.index==2?(context) => [
-              const PopupMenuItem(
-                child: Text("Status privacy"),
-              ),
-              const PopupMenuItem(
-                child: Text("Settings"),
-              ),
-              ]
-               :_tabController?.index==3?(context) => [
-                const PopupMenuItem(
-                child: Text("Clear cal log"),
-              ),
-              const PopupMenuItem(
-                child: Text("Settings"),
-              ),
-               ]:(context) => []
-          ),
+              itemBuilder: _tabController?.index == 1
+                  ? (context) => [
+                        const PopupMenuItem(
+                          child: Text("New group"),
+                        ),
+                        const PopupMenuItem(
+                          child: Text("New broadcast"),
+                        ),
+                        const PopupMenuItem(
+                          child: Text("Linked devices"),
+                        ),
+                        const PopupMenuItem(
+                          child: Text("Starred message"),
+                        ),
+                        const PopupMenuItem(
+                          child: Text("Payments"),
+                        ),
+                        const PopupMenuItem(
+                          child: Text("Settings"),
+                        ),
+                      ]
+                  : _tabController?.index == 2
+                      ? (context) => [
+                            const PopupMenuItem(
+                              child: Text("Status privacy"),
+                            ),
+                            const PopupMenuItem(
+                              child: Text("Settings"),
+                            ),
+                          ]
+                      : _tabController?.index == 3
+                          ? (context) => [
+                                const PopupMenuItem(
+                                  child: Text("Clear cal log"),
+                                ),
+                                const PopupMenuItem(
+                                  child: Text("Settings"),
+                                ),
+                              ]
+                          : (context) => []),
         ],
         bottom: TabBar(
             controller: _tabController,
@@ -101,9 +105,9 @@ class _HomePageState extends State<HomePage>
           Container(
             color: Colors.black,
           ),
-          UsersList(),
+         const UsersList(),
           const StatusPage(),
-          const CallHistroy()
+         const CallHistory()
         ],
       ),
       floatingActionButton: _tabController?.index == 0

@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:whatsapp/Screens/ChatPage.dart';
 import 'package:whatsapp/Screens/HomePage.dart';
-import 'package:whatsapp/Screens/SampleData.dart';
-import 'package:whatsapp/Screens/UsersList.dart';
 import 'package:whatsapp/Utils/AppColors.dart';
 
 void main() {

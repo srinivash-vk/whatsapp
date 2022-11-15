@@ -3,8 +3,8 @@ import 'package:whatsapp/Utils/AppColors.dart';
 import 'dart:math' as math;
 import 'SampleData.dart';
 
-class CallHistroy extends StatelessWidget {
-  const CallHistroy({Key? key}) : super(key: key);
+class CallHistory extends StatelessWidget {
+  const CallHistory({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
