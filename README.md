@@ -1,4 +1,4 @@
-# ClubHouse UI Clone
+# Whats App UI Clone
 
 To run this project: 
 
