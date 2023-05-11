@@ -1,16 +1,26 @@
-# whatsapp
+# ClubHouse UI Clone
 
-A new Flutter project.
+To run this project: 
 
-## Getting Started
+# To install dependencies 
 
-This project is a starting point for a Flutter application.
+`flutter pub get`
 
-A few resources to get you started if this is your first Flutter project:
+# To run
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+`flutter build`
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# Screen layout
+![WhatAppAllChat](https://github.com/srinivash-vk/whatsapp/assets/67652658/72d0443b-a182-40a6-9303-d7f3e53ecb0b)
+
+![WhatsAppChatPop](https://github.com/srinivash-vk/whatsapp/assets/67652658/56135d89-3425-4554-9a45-968c8c541565)
+
+![WhatsAppStatus](https://github.com/srinivash-vk/whatsapp/assets/67652658/3988e6ca-1901-4ced-8dee-f8d563d08a9c)
+
+![WhatsAppStatusPop](https://github.com/srinivash-vk/whatsapp/assets/67652658/6edbfa48-fd56-4663-95cd-a321ad191c75)
+
+![WhatsAppCalls](https://github.com/srinivash-vk/whatsapp/assets/67652658/d338c734-ede5-4be8-91eb-36084237dafd)
+
+![WhatsAppCallsPop](https://github.com/srinivash-vk/whatsapp/assets/67652658/e249c3df-35c2-4739-b1e9-f345fd19d786)
+
+
